@@ -13,6 +13,7 @@ class Genre
 
   def songs
     # iterates through all songs and finds the songs that belong to that genre.
+    Song.all { |g| g.genre == self }
   end
 
   def artists
