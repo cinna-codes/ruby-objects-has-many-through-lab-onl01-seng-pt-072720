@@ -18,5 +18,6 @@ class Genre
 
   def artists
     # iterates over the genre's collection of songs and collects the artist that owns each song.
+    self.songs.map { |g| g.artist }
   end
 end
