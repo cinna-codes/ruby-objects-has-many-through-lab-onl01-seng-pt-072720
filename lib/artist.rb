@@ -20,7 +20,7 @@ class Artist
 
   def songs
     # iterates through all songs and finds the songs that belong to that artist. Try using select to achieve this.
-    Song.select { |s| s.artist == self }
+    Song.all.select { |s| s.artist == self }
   end
 
   def genres
